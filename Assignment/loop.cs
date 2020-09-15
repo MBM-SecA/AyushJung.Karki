@@ -1,6 +1,7 @@
 using System;
 
- public class Sum{
+
+public class Sum{
 
   static void Main(string[]args){
 Operation operation=new Operation();
@@ -45,6 +46,8 @@ System.Console.WriteLine("Enter a string:");
 string word=Console.ReadLine();
 string initial=operation.GetInitials(word);
 System.Console.WriteLine($"the initial character of given word is:{initial}");
+
+ 
 
   }
 
