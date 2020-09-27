@@ -5,7 +5,7 @@ namespace Asyn
 {
     class Program
     {
-        static Asyn  Main()
+        static void  Main()
         {
         //    HttpClient client=new HttpClient();
         //    Stopwatch stopwatch=stopwatch.StartNew();

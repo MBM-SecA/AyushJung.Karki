@@ -1,7 +1,7 @@
-using System.Collections.Generic;
+
 using System.Linq;
 using System;
-class ComplexType
+class  ComplexType
 {
  public void LearnLinq()
 {
@@ -14,13 +14,17 @@ class ComplexType
                where country.continent=="Asia" && country.independencyDay==default
                select country;
 
-foreach(var output in result4)
- {
-     Console.WriteLine(output);
- }
+// foreach(var output in result4)
+//  {
+//      Console.WriteLine(output);
+//  }
 //hw:Is there any  african country  in your collectons.
-//hw:print first 2 largest  asian country names
- 
 
+ var output1=from Country in countries
+              where Country.continent=="Africa"
+              select Country.name;
+
+  //hw:print first 2 largest  asian country names.
+ 
   }
 }
