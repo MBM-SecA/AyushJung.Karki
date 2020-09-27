@@ -3,7 +3,7 @@ using System.Linq;
 using System;
 class ComplexType
 {
-void Retrictions()
+ public void LearnLinq()
 {
     var countries=Country.GetCountries();
  var result4= from country in countries
@@ -14,11 +14,13 @@ void Retrictions()
                where country.continent=="Asia" && country.independencyDay==default
                select country;
 
- foreach(var output in result4)
+foreach(var output in result4)
  {
      Console.WriteLine(output);
  }
-}
+//hw:Is there any  african country  in your collectons.
+//hw:print first 2 largest  asian country names
+ 
 
-
+  }
 }
