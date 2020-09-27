@@ -25,7 +25,7 @@ using System.Collections.Generic;
      {
          
 Country c1=new Country("Nepal","Asia",98765234.9,24356758);
-Country c2=new Country("India","Asia",3387654.9,23454321);
+Country c2=new Country("India","Asia",3387654.9,23454321, DateTime.Parse("1947/1/12"));
 Country c3=new Country("Pakistan","Asia",9837654.9,24321438);
 Country c4=new Country("Maldives","Asia",98654.9,45768965678);
 Country c5=new Country("Bhutan","Asia",900654.9,23456778);

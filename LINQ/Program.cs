@@ -24,20 +24,13 @@ namespace LINQ
  string[] names={"ayush","Abhinash","Abhaya","anil","bikash","umesh","umakunda"};
  var result3= names.Where(y=> y.Length > 4 && y.ToLower().StartsWith("a"));
 
-//  foreach(var name in names)
-//  {
-//      Console.WriteLine(name);
-//  }
+ foreach(var name in result3)
+ {
+     Console.WriteLine(name);
+ }
 
 //print name of countyries which has population less than 100k
-var countries=Country.GetCountries();
- var result4= from country in countries
-               where country.population<100000
-               select country;
- foreach(var output in result4)
- {
-     Console.WriteLine(output);
- }
+
 
 
         }
