@@ -1,10 +1,10 @@
 @model Person
 @{
-    ViewData["Titlephrase"]="Add Employee";
+    ViewData["Titlephrase"]="Edit Employee";
     string[] genders={"Male","Female","Others"};
     List<Department> devOptions = ViewData["DepartmentOptions"] as List<Department>;
 }
-<h3>Add New Employee</h3>
+<h3>Edit New Employee</h3>
 <hr>
 <form   asp-controller="Employee" asp-action="Add" method="POST">
   <div class="form-group">
@@ -28,8 +28,7 @@
   <label class="form-check-label" for="@gender">
     @gender
   </label>
-  </div>
-       
+  </div>    
    } 
   </div>
   <div class="form-group">
@@ -37,15 +36,14 @@
     <input type="number" class="form-control" asp-for="Salary" placeholder="Enter Salary">
   </div>
     <div class="form-group">
-      <label asp-for="Department"></label><span class="text-danger" asp-validation-for="Department"></span>
     <select class = "custom-select" asp-for="DepartmentId">
-      <option selected>Please select a department </option>
+      <options selected>Please select a department </options>
       @foreach (var Department in devOptions)
       {
-          <option asp-for="DepartmentId" value="@Department.Id">@Department.Name</option>
+          <option value="@Department.Id">@Department.Name</option>
       }
-      
+      </options>
     </select>
-  </div>
+  </div>  
   <button type="submit" class="btn btn-primary">Save Employee</button>
 </form>
